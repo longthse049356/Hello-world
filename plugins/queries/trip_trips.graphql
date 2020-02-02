@@ -1,0 +1,46 @@
+query($param: TripSearchParam!) {
+    trip_trips(param: $param) {
+        edges{
+            id
+            title
+            slug
+            description
+            start_date
+            end_date
+            photos{
+                title
+                thumbnails
+            }
+            user{
+                username,
+                avatar{
+                    thumbnails
+                }
+            }
+            start_point{
+                title
+                slug
+            }
+            end_point{
+                title
+                slug
+                photos{
+                    title
+                    thumbnails
+                }
+            }
+            fixed_cost
+            group{
+                is_join{
+                    status
+                    role{
+                        title
+                    }
+                }
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}

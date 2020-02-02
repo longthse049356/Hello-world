@@ -1,0 +1,38 @@
+query($param: GroupParam!) {
+    group_groups(param: $param) {
+        edges{
+            id
+            title
+            description
+            slug,
+            total_member
+            banner{
+                id
+                title
+                path
+                thumbnails
+            }
+            members{
+                id
+                first_name
+                last_name
+                username
+                avatar{
+                    id
+                    path
+                    thumbnails
+                }
+            }
+            is_join{
+                id
+                status
+                role{
+                    title
+                }
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}

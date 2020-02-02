@@ -1,0 +1,4 @@
+REST_URI=http://127.0.0.1:8000/v1
+GRAPH_URI=http://159.89.199.238:8888/query
+SOCKET_URI=http://127.0.0.1:2019
+DOMAIN=trip.vn

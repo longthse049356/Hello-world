@@ -1,0 +1,18 @@
+query($param: DestinationParam!) {
+    destination_destinations(param: $param) {
+        edges {
+            id
+            title
+            slug
+            description
+            coordinates
+            photos{
+                title
+                thumbnails
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}

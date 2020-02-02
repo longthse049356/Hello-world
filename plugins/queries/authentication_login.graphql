@@ -1,0 +1,5 @@
+query($credential:Credential!) {
+    authentication_login(credential: $credential) {
+        token
+    }
+}

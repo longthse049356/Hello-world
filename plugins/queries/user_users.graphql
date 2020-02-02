@@ -1,0 +1,27 @@
+query($param:UsersParam!){
+    user_users(param: $param){
+        edges{
+            id
+            first_name
+            last_name
+            username
+            avatar{
+                id
+                path
+                thumbnails
+            }
+            profile{
+                media{
+                    path
+                    thumbnails
+                }
+            }
+            is_followed{
+                id
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}

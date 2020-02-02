@@ -1,0 +1,43 @@
+{
+    "name": "undercontruction",
+    "version": "1.0.0",
+    "description": "My supreme Nuxt.js project",
+    "author": "hoanganhlam",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.10.2",
+        "@nuxtjs/axios": "^5.6.0",
+        "@nuxtjs/pwa": "^3.0.0-0",
+        "axios": "latest",
+        "buefy": "latest",
+        "chart.js": "^2.8.0",
+        "cookie-universal-nuxt": "^2.0.18",
+        "cookieparser": "^0.1.0",
+        "dotenv": "latest",
+        "graphql": "^14.5.8",
+        "graphql-tag": "^2.10.1",
+        "lodash": "latest",
+        "mapbox-gl": "^1.6.1",
+        "moment": "latest",
+        "node-sass": "^4.12.0",
+        "nuxt": "^2.0.0",
+        "nuxt-buefy": "^0.3.17",
+        "qrcode": "^1.4.4",
+        "raw-loader": "^3.1.0",
+        "sass-loader": "^7.3.1",
+        "socket.io-client": "^2.3.0",
+        "vue": "^2.6.11",
+        "vue-mapbox": "^0.4.1",
+        "vue2-google-maps": "^0.10.7",
+        "vuex": "^3.1.2"
+    },
+    "devDependencies": {
+        "@nuxtjs/dotenv": "^1.4.1"
+    }
+}

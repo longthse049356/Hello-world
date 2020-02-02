@@ -1,0 +1,23 @@
+query {
+    authentication_profile {
+        id
+        username
+        last_name
+        first_name
+        avatar {
+            thumbnails
+            path
+            id
+        },
+        profiles {
+            id
+            is_main
+            media {
+                path
+                thumbnails
+                id
+                title
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+query($param: UserParam!){
+    user_search(param: $param){
+        id
+        username
+        about
+        first_name
+        last_name
+        avatar {
+            thumbnails
+            path
+            id
+        }
+        profile{
+            id
+            address{
+                id
+                formatted_address
+            }
+            destination{
+                id
+                title
+                slug
+            }
+            media {
+                id
+                title
+                thumbnails
+                path
+            }
+            is_main
+        }
+        is_followed {
+            id
+        }
+    }
+}

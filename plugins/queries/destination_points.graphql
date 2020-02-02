@@ -1,0 +1,24 @@
+query($param: PointParam!) {
+    destination_points(param: $param) {
+        edges{
+            id
+            title
+            slug
+            description
+            coordinates
+            photos{
+                title
+                thumbnails
+            }
+            address {
+                id
+                place_id
+                formatted_address
+                geometry
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}

@@ -1,0 +1,42 @@
+query($slug: String!) {
+    destination_point(slug: $slug) {
+        id
+        title
+        slug
+        description
+        coordinates
+        photos{
+            id
+            title
+            thumbnails
+            path
+        }
+        address {
+            id
+            place_id
+            formatted_address
+            geometry
+        }
+        criterias{
+            id
+            title
+            rate
+        }
+        point_services{
+            id
+            photos{
+                id
+                thumbnails
+                path
+            }
+            max_quantity
+            extra
+            price
+            service{
+                id
+                title
+            }
+        }
+        extra
+    }
+}

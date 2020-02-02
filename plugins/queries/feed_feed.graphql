@@ -1,0 +1,40 @@
+query($param: FeedDetailParam!) {
+    feed_feed(param: $param) {
+        id
+        actor
+        action_object
+        verb
+        target
+        location
+        description
+        created
+        updated
+        comments {
+            user {
+                updated
+                username
+                first_name
+                last_name
+                avatar {
+                    path
+                    id
+                    thumbnails
+                }
+                profile{
+                    media {
+                        path
+                        id
+                        thumbnails
+                    }
+                }
+            }
+            content
+            created
+        }
+        is_voted{
+            id
+        }
+        comment_count
+        vote_count
+    }
+}

@@ -1,0 +1,33 @@
+query($slug: String!) {
+    group_group(slug: $slug) {
+        id
+        title
+        slug
+        description
+        total_member
+        banner{
+            id
+            title
+            path
+            thumbnails
+        }
+        is_join{
+            id
+            status
+            role{
+                title
+            }
+        }
+        members{
+            id
+            first_name
+            last_name
+            username
+            avatar{
+                id
+                path
+                thumbnails
+            }
+        }
+    }
+}

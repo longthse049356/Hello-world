@@ -1,0 +1,14 @@
+query($limit: Int!, $page: Int!, $search: String!) {
+    destination_vehicles(limit: $limit, page: $page, search: $search) {
+        edges{
+            id
+            title
+            slug
+            description
+            icon
+        }
+        page
+        limit
+        total_count
+    }
+}

@@ -1,0 +1,11 @@
+query{
+    configs{
+        content_type{
+            id
+            model
+            app_label
+        }
+        budget_today
+        current_time
+    }
+}

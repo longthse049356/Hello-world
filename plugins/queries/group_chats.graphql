@@ -1,0 +1,30 @@
+query($param:GroupChatParam!){
+    group_chats(param:$param){
+        edges{
+            id
+            name
+            is_single
+            created
+            lastest_message{
+                id
+                is_read
+                content
+                created
+            }
+            present_users{
+                id
+                username
+                first_name
+                last_name
+                profile{
+                    media{
+                        path
+                        thumbnails
+                    }
+                }
+            }
+
+        }
+        total_count
+    }
+}

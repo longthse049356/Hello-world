@@ -1,0 +1,14 @@
+query($param: MediaParam!) {
+    media_medias(param: $param) {
+        edges{
+            id
+            title
+            description
+            path
+            thumbnails
+        }
+        page
+        limit
+        total_count
+    }
+}

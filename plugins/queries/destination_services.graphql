@@ -1,0 +1,16 @@
+query($param: ServiceSearchParam!) {
+    destination_services(param: $param) {
+        edges {
+            id
+            title
+            service_kind
+            photos{
+                title
+                thumbnails
+            }
+        }
+        page
+        limit
+        total_count
+    }
+}
